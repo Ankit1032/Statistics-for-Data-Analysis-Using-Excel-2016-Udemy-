@@ -1,0 +1,32 @@
+V1 >>
+Statistics:
+	#Descriptive Statistics: 
+		-To summerize facts
+	
+	#Inferential Statistics
+		-Make judgement about the population based on limited samples
+		
+	#Correlation/Regression
+		-Forecasting of the future based on current facts
+
+Probability
+
+V2>>
+#Statistics is a branch of mathematics dealing with collection,analysis, interpretation,presentation and organization of data.
+#Statistics converts data into information based on which you can take decision
+#Statistics got 2 broad branches
+	#Descriptive Statistics
+		-Suppose we have dataset of USA states, population,area and literacy rates.
+		-Now finding the average population of states or average of area would be descriptive statistics because that is which is summarizing data
+		-Dataset : State.X77
+		
+	
+	
+	#Inferential Statistics :
+		- based on random samples from population make inference about the population.
+		- Population and Sample : Population is the big thing and sample is a small piece taken out of population
+		- Population : All the people of a country
+		- Sample : Taking out some random people and find out some relevant thing among those people
+		- So rather than calculation average height of people by selecting all the people of county, you select a good sample of 100-200 people, calculate avg height using their height and get an estimate of avg height in that particular country
+		- Dataset ChickenWt : Effect of feed on chicken weight based on samples
+		
