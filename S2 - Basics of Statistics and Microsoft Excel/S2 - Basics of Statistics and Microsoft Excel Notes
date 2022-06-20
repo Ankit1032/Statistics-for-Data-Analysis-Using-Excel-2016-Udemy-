@@ -1,0 +1,200 @@
+3. Section Introduction - Basics of Statistics and Excel
+
+#various Data types in Excel - Text , Numbers , Date/Time, Logical Operators
+#Qualitative vs Quantitative Data
+#Continuous vs Discrete Data
+#Basic Built-in Functions 
+#Named Ranges
+Dataset used : mtcars(32 cars)
+
+4. Excel Interface (Excel)
+#Go to Formulas -> More Functions -> Statistical -> right click on it and add to Quick Access toolbar
+#We added this in quick access because we will be using it alot
+#Each sheet contains 1 million rows = 10 lakhs 
+#Data containing more than 1 millions rows will not work in excel sheet
+#ctrl + down -> takes you to the bottom of the table or sheet
+#ctrl + home OR ctrl + up -> takes me to top
+#Excel sheet contains 16384 columns
+
+[Note]
+	#Remember the rows and columns size limitations are only for a single sheet in the whole excel workbook
+	#You can have multiple sheets with 10 lakhs rows and 16384 columns in a single excel workbook
+	#There can be only 255 worksheets ina single excel workbook
+
+
+
+5. Types of Data in Excel - Text, Numbers, Date/Time, Logical (Excel)
+
+#Use Format Cells options to format cells according to your need or data type like date, currency etc..
+#For example : date can be formatted in numerous ways like dd-mmm-yy or dd-mm-yyyy etc..
+	
+
+6. Qualitative vs Quantitative Data / Continuous vs Discrete (Theory)
+
+
+#from statistics point of view, data could be classified in below ways
+	1. Qualitative Data (Description): Car Brand, City , (Category data such as Auto gear or Manual gear)
+	2. Quantitative Data (Numbers) :  Currency,miles per hour, weight
+	
+	[OR]
+	
+	1. Continuous Data (Infinite categories) : Weight of car, horsepower, Miles per gallon
+	
+	2. Discrete Data (Finite categories) : Number of gears, Automatics vs Manual
+	
+#The Above concepts will be used in probability distributions
+	-For continuous data, we will be using normal distributions
+	-For Discrete data, we will be using binomial or poisson distributions.
+
+
+
+
+
+
+7. Measurement Scales - Nominal, Ordinal, Interval & Ratio (Theory)
+	
+	We would basically differenciate these types of scales from each other by below 3 factors:
+		a. Order
+		b. Difference
+		c. Absolute Zero
+	There are four types of measurement scales used in statistics: nominal, ordinal, interval and ratio. Each scale has different properties and uses.
+
+	1. Nominal
+	A nominal scale is category labels. The category labels are not ordered, so it doesn't matter which number comes first.
+
+	 For example, the following list has three items on a nominal scale:
+
+	1. Apple
+
+	2. Orange
+
+	3. Banana
+
+	These three items are three categories of fruits. There is no order in this list. For example, you can not say that Banana is greater than Apple or Orange.
+
+	2. Ordinal
+	A nominal scale doesn't tell us anything about the relationship between the different categories. However, in the ordinal scale of data, there is an order. However, the difference between them can not be quantified.
+
+	 For example, the following list has three ratings of a product on an ordinal scale:
+
+	1. Good
+
+	2. Better
+
+	3. Best
+
+	These three items are categories, but they do have an order. However, we can not quantify the difference between the two values. The difference between Better and Good is not the same as the difference between Best and Better since these differences do not make any sense.
+
+	Another example of ordinal data would be Uber ride rating on a scale of 1 start to 5 stars.
+
+	 
+
+	3. Interval
+	Previously we talked about nominal and ordinal scales. Both of these scales had data in the form of categories.
+
+	Interval and ratio scale of data in the form of numbers or we can say that these two are numeric scales.
+
+	In the interval scale, we do have an order (just like ordinal data), and we can find the exact difference between the two values.
+
+	The classic example of an interval scale is the temperature in degrees Celcius. We can clearly say that 50 degrees C is greater than 40 degrees C. That means there is an order. We can also say that the difference between 50 and 40 degrees C is the same as the difference between 70 and 60 degrees C.
+
+	The only limitation of the interval scale is that there is no absolute or true zero. For example, 0 degrees C does not mean there is "no temperature."
+
+	 
+
+	4. Ratio
+	The ratio scale has all the features of the Interval scale, and in addition, there is an absolute or true zero as well.
+
+	The examples of ratio scale include weight, height, volume etc.
+
+	We know that 10 Kg is greater than 5 Kg. The difference in weight between 10 Kg and 5 Kg is the same as the difference between 100 Kg and 95 Kg. Also, we do have an absolute zero here. A weight of 0 Kg means that there is no weight.
+
+	 
+
+	Measurement of Central Tendency
+	To summary a set of data, we use various measurements of central tendencies, such as Mean, Mode and Median.
+
+	Depending upon the measurement scales, you can use the most appropriate measure of central tendency.
+
+	For Nominal data, use Mode as the measurement of central tendency.
+	For Interval data, you can use Mode or Median as the measurement of central tendency.
+	For Interval and Ratio scale, you can use any of three measurements of central tendency (Mean, Mode or Median).
+	
+	Nominal and Ordinal Data comes under Qualitative Data
+	Interval and Ratio Data comes under Quantitative Data
+
+
+8. Basic Statistical Terms - Population and Sample (Theory)
+
+#Population : Complete collection to be studied
+#Sample : part of population (Summary of samples is known as statistic which is not as same as the word "Statistics"
+
+POPULATION ---> sampling process ---> SAMPLE 
+	|									|
+	|									|
+PARAMETER <-------- inference <--- STATISTIC
+
+	
+CALCULATIONS		POPULATION PARAMETERS	SAMPLE STATISTICS
+Mean				µ(mu)					x̄(x bar)
+Standard deviation	σ(sigma)				s
+Correlation Coeff	ρ(rho)					r
+Number of elements	N						n
+
+	
+Correlation basically shows relation between two labels for example: height and weight
+	
+[Notations: Above symbols and characters are used to denote certain things in population and sample]
+[You can take reference from the screenshot - Basic-Statistical-Terms]
+
+PARAMETER is the summary of the population (if i find height,weight of each and every individual in the population)
+STATISTIC is the summary of the sample (if i find the height,weight of 100-200 randomly picked individuals from the population)
+
+
+9. Understanding Data Types in mtcars Dataset (Excel)
+[please refer to mtcars sheet to see the column "Types of scales" and "Types of data" which i indentified on my own
+
+
+10. Understanding Formulas and Functions (Excel)
+
+= n4+n5 --> formula
+=sum(n4,n5) --> function
+you can also use "Insert Formula" under formula section to search and use relevant formulas/functions
+
+
+
+11. Applying Formula to Convert Car Weights from lb to kg (Excel)
+=wt*1000*0.453
+Used relative referencing to convert all weights in pounds to KG
+
+
+12. Relative vs Absolute Reference (Excel)
+We use relative referencing when we drag the formula in a particular direction and also want the cells mentioned in the formula to automatically change accoring to the dragging
+We use absolute referencing when we dont want the cells to change while dragging the formulas in a direction
+"$" is used for absolute referencing
+sortcut key to absolute reference is F4
+
+
+13. Basic Formulas, Functions and Named Ranges (Excel)
+
+=SUM()
+=COUNT()
+=MAX()
+=MIN()
+=AVERAGE()
+
+#Named Ranges : To give a name to a range, select all the value in the range--> right click and select "Define Name" and write a relevant name for that range
+And then you can use it in the formulas
+
+#To see what all named ranges are created, click on "Named manager" under formulas tab and it will show all created named ranges
+Named Manager can also be used to edit and delete the named ranges
+
+14. More Functions (Excel)
+=SUMIF
+=SUMIFS
+=AVERAGEIFS
+=AVERAGE : Average doesn't consider blank cells or texts cells
+=AVERAGEA : AVERAGE doesn't consider blank cells but considers texts cells
+=COUNTA
+
+
