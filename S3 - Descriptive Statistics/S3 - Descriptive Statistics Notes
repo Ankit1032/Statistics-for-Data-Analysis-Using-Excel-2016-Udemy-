@@ -1,0 +1,103 @@
+15. Section Introduction - Descriptive Statistics
+# Measurement of central tendency
+	- Mean
+	- Mode
+	- Median
+	- Percentile
+	
+# Measurement of variation:
+	- Range of data
+	- Standard Deviation
+	- Variance
+	- Interquartile Range
+	
+# Array
+
+
+16. Descriptive Statistics (Theory)
+
+#Two types of statistics
+	- Descriptive Statistics : find the height,weight, age of all the school kids in the scool (Whole population is included)
+	- Inferential Statistics : Take a limited set of students and find their height, weights(a sample is taken out of the population and then we infer and conclude the avg height of students)
+
+#two types of descriptive statistics
+	- Central Tendency (Suppose a lady gets lots of calls, so whats the avg time for her to pick up calls once the phone starts ringing)
+		- mean
+		- median
+		- mode
+		- percentile
+		
+	- Variability (The calls length of the lady might differ , so we could see the calls got ranges of various duration)
+		- range
+		- standard deviation
+		- interquartile range
+
+17. Descriptive Statistics - Central Tendency (Theory)
+	- Mean of 
+		- Population :  µ = ΣX / N
+		- Sample : x̄ = Σx/n
+		- Mean is affected by extreme values(1 + 2 + 3 + 199 + 5)/5 -> here 199 will affect the mean and make it extremely biased
+		
+	- Median 
+		- To calculate median, you need to order ur data either by ascending or descending 
+		- Example : 6,9,10,11,14 so the median = 10
+		- Example : 6,9,10,11,11,14 so the median is (10+11)/2 = 10.5
+		- Median doesn't get affected by extreme positive or extreme negative values unlike mean
+			- For example : 6,9,10,11,11,14990 so the median is (10+11)/2 = 10.5 (we could see the median is still 10.5)
+		
+	- Mode
+		- Most occuring item
+		- Example : 10,11,14,9,6,10 (So here mode is 10)
+		- Example : 1,2,5,2,1,6 (So here mode is 1 and 2 which is also called bi-modal as it got 2 modes)
+		
+	- Percentile
+		-divides the data into 100 parts (1 - 99)
+		
+	-Quartile
+		-divides the data into 4 parts (Q1 = 25% cut mark)(Q2 = 50% cut mark)(Q3 = 75% cut mark)
+		- For Example :  6,9,10,11,14
+			- so 10 is the median so it becomes Q2:50%
+			- as 9 is in between 6 and 10 so 9 becomes Q1:25%
+			- as 11 is between 10 and 14 so 11 becomes Q3 = 75%
+		
+		- For Example :  6,9,10,11,11,14
+			- So Q2:50% would be the median which is (10+11)/2 = 10.5
+			- And 9 is between 6 and 10.5 so Q1:25% would be 9
+			- And Q3:75% would be (10.5+14)/2 = 12.25
+			- 
+		
+#Percentile / Quartile Steps
+	- Arrange in asc/desc order
+	- Calculate location(i) = P.(n)/100
+	- P=percentile | n=numbers in data set
+	- If i is a whole number - Percentile is average of (i)th and (i+1)th location
+	- Example: 6,9,10,11,11,14
+		STEPS for calculating 1st quartile:
+			- i= P.(n)/100 -> (25*6)/100 -> 1.5
+			- as i is not a whole number, so we have to take (i+1) = 2.5 and its whole number is 2 
+			So, P25(25 percentile) is in 2nd location which is 9
+	- Q1=9, Q2=10.5, Q3=11
+
+
+18. Descriptive Statistics - Variation (Theory)
+
+
+
+19. Installing Data Analysis Pack and Calculating Descriptive Statistics (Excel)
+
+
+
+20. Descriptive Statistics - Central Tendency (Excel)
+
+
+
+21. Descriptive Statistics - Variation (Excel)
+
+
+22. Descriptive Statistics - Shapes (Theory and Excel)
+
+
+23. Arrays (Excel)
+
+
+
