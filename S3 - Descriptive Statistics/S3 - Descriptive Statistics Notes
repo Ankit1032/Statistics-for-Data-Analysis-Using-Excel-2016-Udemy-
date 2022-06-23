@@ -162,21 +162,62 @@ To download Data Analysis Toolpack:
 
 
 21. Descriptive Statistics - Variation (Excel)
-	- Standard Error
+	- Standard Error (part of inferential statistics) = STDEV.S/SQRT(N) 
 	- Standard Deviation
+		=STDEV.P() -->POPULATION
+		=STDEV.S() -->SAMPLE
+		=STDEVPA --> True/False/text (same like AVERAGEA)
+		=STDEVA
 	- Sample Variance
+		=VAR.P -->POPULATION
+		=VAR.S -->SAMPLE
+		=VARPA
+		=VARA
 	- Kurtosis
 	- Skewness
 	- Range
+		=max() - min()
 	- Minimum
+		=min(0
 	- Maximum
+		=max()
 	
 
 
 22. Descriptive Statistics - Shapes (Theory and Excel)
 
+#Skewness
+	-Formula : =skew()
+	-Negative skew or left skew
+		- Left tail is longer
+	- Positive Skew or Right skew
+		- Right tail is longer
+		
+	#Value of skewness
+		- Skew = 0 means perfect symmetric
+		- Skew between 0 and +/- 0.5 means approx. symmetric
+		- Skew between +/- 0.5 and 1/0 means moderately skewed
+		- Skew more than +1 or less than -1 means highly skewed
+		
+#Kurtosis
+	-Formula : =kurt()
+	#Normal distribution has kurtosis = 0 (symmetric distribution)
+	#Kurtosis < 0 means peak is short and broad, tails are shorter
+	#Kurtosis > 0 means peak is higher and thinner, tails are longer
+	
+
 
 23. Arrays (Excel)
 
-
+	- Array is a group of values in multiple cells
+	- You cannot delete a single element from the list of array
+	- To fill rows using array : ={1,2,3,4,5}
+	- To fill column using array : ={1;2;3;4;5}
+	- To fill a matrix 3x3 : {1,2,3;4,5,6;7,8,9}
+	- Array.xlsx(Refer it)
+		- To find frequency of elements in a column using bins(we will see how many elements fall in the range of particular bins)
+		==FREQUENCY(data_array,bins_aray)
+		
+	- To fill whole column with some formula instead of dragging out, use array (ctrl+shift+enter) --> It will fill the whole 
+	-Problem with the above trick is you can't delete or modify a single value
 
