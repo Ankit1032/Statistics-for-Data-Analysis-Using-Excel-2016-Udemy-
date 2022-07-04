@@ -1,0 +1,223 @@
+15. Section Introduction - Descriptive Statistics
+# Measurement of central tendency
+	- Mean
+	- Mode
+	- Median
+	- Percentile
+	
+# Measurement of variation:
+	- Range of data
+	- Standard Deviation
+	- Variance
+	- Interquartile Range
+	
+# Array
+
+
+16. Descriptive Statistics (Theory)
+
+#Two types of statistics
+	- Descriptive Statistics : find the height,weight, age of all the school kids in the scool (Whole population is included)
+	- Inferential Statistics : Take a limited set of students and find their height, weights(a sample is taken out of the population and then we infer and conclude the avg height of students)
+
+#two types of descriptive statistics
+	- Central Tendency (Suppose a lady gets lots of calls, so whats the avg time for her to pick up calls once the phone starts ringing)
+		- mean
+		- median
+		- mode
+		- percentile
+		
+	- Variability (The calls length of the lady might differ , so we could see the calls got ranges of various duration)
+		- range
+		- standard deviation
+		- interquartile range
+
+17. Descriptive Statistics - Central Tendency (Theory)
+	- Mean of 
+		- Population :  µ = ΣX / N
+		- Sample : x̄ = Σx/n
+		- Mean is affected by extreme values(1 + 2 + 3 + 199 + 5)/5 -> here 199 will affect the mean and make it extremely biased
+		
+	- Median 
+		- To calculate median, you need to order ur data either by ascending or descending 
+		- Example : 6,9,10,11,14 so the median = 10
+		- Example : 6,9,10,11,11,14 so the median is (10+11)/2 = 10.5
+		- Median doesn't get affected by extreme positive or extreme negative values unlike mean
+			- For example : 6,9,10,11,11,14990 so the median is (10+11)/2 = 10.5 (we could see the median is still 10.5)
+		
+	- Mode
+		- Most occuring item
+		- Example : 10,11,14,9,6,10 (So here mode is 10)
+		- Example : 1,2,5,2,1,6 (So here mode is 1 and 2 which is also called bi-modal as it got 2 modes)
+		
+	- Percentile
+		-divides the data into 100 parts (1 - 99)
+		
+	-Quartile
+		-divides the data into 4 parts (Q1 = 25% cut mark)(Q2 = 50% cut mark)(Q3 = 75% cut mark)
+		- For Example :  6,9,10,11,14
+			- so 10 is the median so it becomes Q2:50%
+			- as 9 is in between 6 and 10 so 9 becomes Q1:25%
+			- as 11 is between 10 and 14 so 11 becomes Q3 = 75%
+		
+		- For Example :  6,9,10,11,11,14
+			- So Q2:50% would be the median which is (10+11)/2 = 10.5
+			- And 9 is between 6 and 10.5 so Q1:25% would be 9
+			- And Q3:75% would be (10.5+14)/2 = 12.25
+			- 
+		
+#Percentile / Quartile Steps
+	- Arrange in asc/desc order
+	- Calculate location(i) = P.(n)/100
+	- P=percentile | n=numbers in data set
+	- If i is a whole number - Percentile is average of (i)th and (i+1)th location
+	- Example: 6,9,10,11,11,14
+		STEPS for calculating 1st quartile:
+			- i= P.(n)/100 -> (25*6)/100 -> 1.5
+			- as i is not a whole number, so we have to take (i+1) = 2.5 and its whole number is 2 
+			So, P25(25 percentile) is in 2nd location which is 9
+	- Q1=9, Q2=10.5, Q3=11
+
+
+18. Descriptive Statistics - Variation (Theory)
+# Range
+# Interquartile range 
+# Standard Deviation
+
+#RANGE 
+	- Difference between lowest and the highest value
+	- Example : 6,9,10,11,11,14
+	- Range = 14 - 6
+	- Disadvantage : This is affected by the outliers and the extreme values
+
+#Interquartile Range (IQR)
+	- in this, we ignore the top 25% and bottom 25% and only consider the range of middle 50%
+	- IQR = Q3 - Q1
+	- Example : 6,9,10,11,11,14
+	- Q1=9, Q2=10.5, Q3=11
+	- IQR = 11 - 9 = 2
+	- This IQR would be affected by extreme outliers as we just just middle 50% of data and Outliers would come in this range because we order our data before we calculate quartile range. so those extreme outliers would be at the end points of the data
+	- We use box and whisker plot for showing IQR
+	
+#Standard Deviation
+	- Variance : Average of squared deviation about the arithmetic mean
+	- Square root of variance is standard deviation
+	
+	s = √ ( Σ(x - x̄)² / n - 1) ------ [s = sample, x = each value , x̄ = mean of all the elements, n = no of elements]
+	
+	σ = √ ( Σ(x - µ)² / N) ------ [σ = population, x = each value , µ = mean of all the elements, N = no of elements]
+	
+	s² will be sample variance
+	σ² will be population variance
+	
+	-A standard deviation (or σ) is a measure of how dispersed the data is in relation to the mean. Low standard deviation means data are clustered around the mean, and high standard deviation indicates data are more spread out.
+	-Variance tells you the degree of spread in your data set. The more spread the data, the larger the variance is in relation to the mean.
+	
+
+19. Installing Data Analysis Pack and Calculating Descriptive Statistics (Excel)
+
+=STDEV.P() - Standard deviation for population
+=STDEV.S() - Standard deviation for sample
+
+To download Data Analysis Toolpack:
+	-File -> Options -> Add-ins -> Go -> Ok
+	-You can find at in top right corner of data section
+	- This is used to find out all sorts of descriptive statistics without writing much formulas
+	- SUe the options "Descriptive Stattistics" in the Data Pack to calculate all descriptive stats like:
+		- Mean
+		- Standard Error
+		- Median
+		- Mode
+		- Standard Deviation
+		- Sample Variance
+		- Kurtosis
+		- Skewness
+		- Range
+		- Minimum
+		- Maximum
+		- Sum
+		- Count
+
+#Standard Error:
+	- The standard error of the mean, or simply standard error, indicates how different the population mean is likely to be from a sample mean. It tells you how much the sample mean would vary if you were to repeat a study using new samples from within a single population.
+	
+
+20. Descriptive Statistics - Central Tendency (Excel)
+	- Mean 
+		=AVERAGE()
+		=AVERAGEA()
+		=AVERAGEIF()
+		=AVERAGEIFS()
+	- Median
+		=MEDIAN()
+	- Mode
+		=MODE.SNGL() -> Returns the first detected mode element in the list
+		=MODE.MULT() -> Returns all the mode elements in the list in form of Array
+			- to run this, select multiple vertical cells, write the formula in the first cell and press ctrl+shift+enter
+			-you will see that the formula in the formula bar is between {} curly braces which means its an array
+	- Sum 
+		=sum()
+	- Count
+		=count()
+
+
+21. Descriptive Statistics - Variation (Excel)
+	- Standard Error (part of inferential statistics) = STDEV.S/SQRT(N) 
+	- Standard Deviation
+		=STDEV.P() -->POPULATION
+		=STDEV.S() -->SAMPLE
+		=STDEVPA --> True/False/text (same like AVERAGEA)
+		=STDEVA
+	- Sample Variance
+		=VAR.P -->POPULATION
+		=VAR.S -->SAMPLE
+		=VARPA
+		=VARA
+	- Kurtosis
+	- Skewness
+	- Range
+		=max() - min()
+	- Minimum
+		=min(0
+	- Maximum
+		=max()
+	
+
+
+22. Descriptive Statistics - Shapes (Theory and Excel)
+
+#Skewness
+	-Formula : =skew()
+	-Negative skew or left skew
+		- Left tail is longer
+	- Positive Skew or Right skew
+		- Right tail is longer
+		
+	#Value of skewness
+		- Skew = 0 means perfect symmetric
+		- Skew between 0 and +/- 0.5 means approx. symmetric
+		- Skew between +/- 0.5 and 1/0 means moderately skewed
+		- Skew more than +1 or less than -1 means highly skewed
+		
+#Kurtosis
+	-Formula : =kurt()
+	#Normal distribution has kurtosis = 0 (symmetric distribution)
+	#Kurtosis < 0 means peak is short and broad, tails are shorter
+	#Kurtosis > 0 means peak is higher and thinner, tails are longer
+	
+
+
+23. Arrays (Excel)
+
+	- Array is a group of values in multiple cells
+	- You cannot delete a single element from the list of array
+	- To fill rows using array : ={1,2,3,4,5}
+	- To fill column using array : ={1;2;3;4;5}
+	- To fill a matrix 3x3 : {1,2,3;4,5,6;7,8,9}
+	- Array.xlsx(Refer it)
+		- To find frequency of elements in a column using bins(we will see how many elements fall in the range of particular bins)
+		==FREQUENCY(data_array,bins_aray)
+		
+	- To fill whole column with some formula instead of dragging out, use array (ctrl+shift+enter) --> It will fill the whole 
+	-Problem with the above trick is you can't delete or modify a single value
+
