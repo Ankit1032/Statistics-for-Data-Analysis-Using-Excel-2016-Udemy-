@@ -1,0 +1,7 @@
+Missing data are problematic because, depending on the type, they can sometimes cause sampling bias. 
+
+Missing data in a dataset can be problematic because it can lead to biased or incorrect results and conclusions. When missing data is present in a dataset, it can result in reduced sample sizes, which can decrease the power and generalizability of statistical analyses.
+
+Missing data can also introduce bias in estimates of population parameters, such as means or correlations, if the missing data mechanism is not taken into account. Ignoring missing data or assuming that it is missing completely at random (MCAR) can lead to biased estimates and standard errors.
+
+Moreover, missing data can affect the validity and reliability of statistical tests, such as t-tests or ANOVA. If missing data is not handled appropriately, it can lead to inaccurate p-values and incorrect conclusions about the significance of the results.
